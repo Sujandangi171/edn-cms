@@ -24,10 +24,7 @@
             </div>
         </li>
         @else
-
-        @if ($menu->is_child === false)
         <li><a href="/#{{ $menu->href }}">{{ $menu->title_eng }}</a></li>
-        @endif
         @endif
         @endforeach
     </ul>
