@@ -1,0 +1,90 @@
+#blog{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #f8f8f8; 
+}
+
+.blog-container {
+  /* background: #000; */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.blog-text {
+  text-align: center; /* Center text in the blog-text section */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+.blog-text h2{
+  color: #24B14D;
+  font-weight: bold;
+  /* font-size: 36px; */
+}
+
+.blog-text p{
+  font-size: 18px ;
+}
+
+.blog-box {
+  flex: 1;
+  max-width: 400px; /* Adjust max-width as needed */
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(202, 202, 202);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.blog-box img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.learn-btn {
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+  padding: 8px 15px;
+  padding-left: 0px;
+  /* border: 1px solid black;  */
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: underline; 
+  display: inline-block;
+}
+
+.learn-btn:hover {
+  color: green;
+}
+
+
+/* Additional styles to display blog-box1 and blog-box2 in a column */
+.blog-boxes-column {
+  display: flex;
+  flex-direction: column; /* Display in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+@media screen and (min-width: 768px) {
+  .blog-boxes-column {
+    flex-direction: row; /* For larger screens, display in a row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-boxes-column {
+    flex-direction: column; /* For larger screens, display in a row */
+  }
+  #blog{
+    padding-top: 30px;
+  }
+
+  .blog-text{
+    padding: 10px;
+  }
+}

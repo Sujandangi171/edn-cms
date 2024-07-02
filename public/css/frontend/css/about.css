@@ -1,0 +1,173 @@
+#about {
+  background-color: hsl(108, 28%, 93%);
+  max-width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#about .title {
+  margin-bottom: 30px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+  margin-top: -20px;
+  margin-bottom: 70px;
+}
+
+.section1 {
+  width: 60%;
+  /* margin-bottom: 195px; */
+  box-sizing: border-box;
+  max-height: 400px;
+  /* overflow-y: auto; */
+  padding-right: 25px;
+}
+
+.section1 .sub-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section1 .para {
+  text-align: justify;
+}
+
+.section2 {
+  margin-left: 20px;
+}
+
+.background-and-image-container {
+  /* border: 3px solid green; */
+  width: 100%;
+  max-width: 700px;
+  height: 395px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section2 img {
+  /* border: 3px solid red; */
+  width: 100%;
+  height: 395px;
+  object-fit: cover;
+  border-radius: 6px;
+  position: absolute;
+}
+
+/*
+.btn {
+  text-align: center;
+  position: relative;
+  margin-left: 100px;
+}
+ 
+.btn :hover {
+  background-color: grey;
+  color: white;
+}
+ 
+ 
+ 
+.btn button {
+  background-color: #24B14D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+ 
+ 
+.see-more-btn {
+  background-color: #24B14D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+ 
+.btn button {
+  background-color: #24B14D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+} */
+
+/* Add hover styles to the new class */
+.see-more-btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    height: 865px;
+    overflow: hidden;
+
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 -15px 0px;
+  }
+
+  .background-and-image-container {
+    height: 160px;
+  }
+
+  .section1 {
+    text-align: center;
+    width: 100% !important;
+    padding-right: 0px;
+  }
+
+  .section1,
+  .section2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .section2 {
+    margin-top: 20px;
+    order: 1;
+    width: 100% !important;
+  }
+
+  .section1 {
+    order: 2;
+  }
+
+  #about .title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .content-container {
+    flex-direction: row;
+    order: 1;
+  }
+
+  .section2 {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}

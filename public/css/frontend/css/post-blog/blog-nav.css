@@ -1,0 +1,204 @@
+
+
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  cursor: pointer;
+  padding: .3rem;
+  margin: 0 0px 0 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  margin-left: 40px;
+  /* border: 1px solid red; */
+}
+
+.menu-toggle {
+  display: none;
+  /* Initially hide for larger screens */
+  cursor: pointer;
+  font-size: 1.5em;
+  color: black;
+  /* border: 2px solid blue; */
+}
+
+.hamburger-links {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  /* border: 1px solid brown; */
+  padding: 5px;
+  margin: inherit;
+
+}
+
+.nav-links li {
+  margin-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: green;
+  /* font-weight: bold; */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+/* Style for the main dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the main dropdown button */
+.dropbtn {
+  color: #333;
+  text-decoration: none;
+  padding-right: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for the grandchild dropdown */
+.grandchild-dropdown {
+  position: relative;
+  display: inline-block;
+  /* margin-right: px; */
+}
+
+/* Style for the grandchild dropdown button */
+.grandchild-dropbtn {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+/* Style for the grandchild dropdown content */
+.grandchild-dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: -180px;
+  margin-top: -40px;
+  background-color: #fff;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  z-index: 2;
+}
+
+/* Hover styles */
+.dropdown:hover .dropbtn,
+.grandchild-dropdown:hover .grandchild-dropbtn {
+  background-color: #f9f9f9;
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content,
+.grandchild-dropdown:hover .grandchild-dropdown-content {
+  display: block;
+}
+
+.grandchild-dropdown:hover .grandchild-dropbtn {
+  background-color: #f9f9f9;
+}
+
+/* Display grandchild dropdown content on hover */
+.grandchild-dropdown:hover .grandchild-dropdown-content {
+  display: block;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    /* Show for smaller screens */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex;
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    padding-right: 0;
+    /* Adjust based on your header height */
+    background-color: white;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  /* Larger Screens */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Hide for larger screens */
+  }
+
+  .nav-links {
+    display: flex !important; /* Ensure nav links are visible for larger screens */
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    position: static;
+    background-color: white;
+  }
+
+  .nav-links li {
+    margin-right: 40px; /* Adjust as needed */
+    margin-bottom: 0;
+  }
+
+  .logo {
+    font-size: 1.5em; /* Adjust as needed */
+    margin-left: 40px; /* Adjust as needed */
+  }
+
+  /* Add any additional styles for larger screens here */
+}

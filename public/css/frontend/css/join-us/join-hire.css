@@ -1,0 +1,104 @@
+.hiring {
+  background-color: #eaf2e7;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  margin-top: -3rem;
+  height: 100%;
+  padding-bottom: 30px;
+  margin: 0 0 0 0;
+}
+
+.head h3 {
+  font-size: 40px;
+  color: #24B14D;
+  font-weight: bold;
+}
+
+.positions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.positions__description {
+  border-radius: 2px;
+  padding: 1rem;
+  padding-top: 0;
+  text-align: start;
+  margin-top: 50px;
+}
+
+.location {
+  /* border: 1px solid red; */
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  color: gray;
+}
+
+.positions__vacancies {
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: right;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  background-color: #29b250;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.positions__vacancies .title {
+  text-align: center;
+  color: white;
+}
+
+.no-data-found {
+  margin-top: 23rem;
+}
+
+.no-data-found p {
+  /* margin: 20px 310px; */
+
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .positions {
+    flex-direction: column;
+  }
+
+  .positions__description {
+    margin-top: 20px;
+  }
+
+  .positions__vacancies {
+    margin: 0px;
+    border-radius: 0px;
+
+  }
+
+  .location {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 769px) {
+  .no-data-found {
+    margin-top: 10rem;
+  }
+
+
+  /* Add specific styles for larger screens here if needed */
+}

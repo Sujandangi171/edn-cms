@@ -1,0 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Poppins&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    /* Prevents horizontal scrolling */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.splide {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    /* max-width:1700px; */
+    /* height: 400px; */
+}
+
+.splide__track {
+    max-height: 100vh;
+}
+
+.splide__slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.splide__slide {
+    position: relative;
+}
+
+.splide__slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Add more specificity to the rule */
+.dark-image {
+    filter: brightness(0.7) !important;
+}
+
+.splide__slide div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    /* Ensure the div is above the overlay */
+}
+
+.splide__slide h3,
+.splide__slide p {
+    color: #fff;
+}
+
+/* .splide__slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.splide__slide p {
+    font-size: 2vw;
+}
+
+.owl-nav {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.owl-nav button {
+    margin: 0 5px;
+    /* Adjust the spacing between navigation buttons as needed */
+}
+
+.title {
+    text-align: center;
+    color: #24b14d;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}

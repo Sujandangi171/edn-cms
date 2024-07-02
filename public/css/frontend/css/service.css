@@ -1,0 +1,116 @@
+#service {
+  background-color: #f5f5f5;
+  padding: 1px 0;
+  /* margin-top: 10px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text .text-service{
+  font-size: 36px;
+}
+
+.text-service {
+  color: green;
+  font-weight: bold;
+  /* font-size: 36px; */
+}
+
+.text p {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.content-box {
+  width: 350px;  
+   height: 350px;
+  /* width: calc(33.333 3% - 40px); */
+  margin: 10px;
+  padding: 50px 25px 50px 25px;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  transition: border 1s ease-in-out, background-color 0.5s ease-in-out;
+  animation: borderAnimation 9s linear infinite alternate;
+  cursor: pointer;
+}
+
+.content-box h3{
+  text-align: center;
+  color: black;
+  font-weight: 600 ;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.container .content-box:hover {
+  background-color: rgb(230, 230, 230);
+  transition: background-color 0.5s ease;
+}
+
+
+.content-box i {
+  font-size: 80px;
+  color: #4F5354;
+  transition: color 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+
+
+
+.content-box p {
+  font-size: 16px;
+  color: #4F5354;
+}
+
+.container .content-box:hover i {
+  color: #24B14D; /* Change this to the desired green color code */
+  transition: color 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+.container :hover {
+  /* background-color: rgb(247, 247, 247); */
+}
+
+.transition-box {
+  animation: borderAnimation 6s linear infinite alternate;
+  /* Adjust the duration as needed */
+}
+
+@keyframes borderAnimation {
+
+  0%,
+  100% {
+    border: 3px solid green;
+  }
+
+  50% {
+    border: 2px solid transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-box {
+    width: 100%;
+    margin: 0 20px 20px;
+    padding: 20px;
+  }
+  #service{
+    padding-top: 30px;
+  }
+}

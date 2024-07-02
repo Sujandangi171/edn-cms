@@ -1,0 +1,32 @@
+.the-blog {
+  padding: 40px;
+}
+
+.Partners {
+  font-size: 54px;
+  font-weight: bold;
+  color: #29b250;
+  padding-bottom: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .the-blog {
+    padding: 20px; /* Adjust as needed for smaller screens */
+  }
+
+  .Partners {
+    font-size: 36px; /* Adjust as needed for smaller screens */
+  }
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 769px) {
+  .the-blog {
+    padding: 60px; /* Adjust as needed for larger screens */
+  }
+
+  .Partners {
+    font-size: 72px; /* Adjust as needed for larger screens */
+  }
+}

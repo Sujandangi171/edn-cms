@@ -1,0 +1,65 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+  /* Make the slider container three times the width of the viewport */
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome {
+  font-size: 4vw;
+  /* Use viewport width for better responsiveness */
+  font-weight: bold;
+}
+
+.welcome span {
+  color: green;
+}
+
+.shortDes {
+  font-size: 2vw;
+  /* Use viewport width for better responsiveness */
+}
+
+@media screen and (max-width: 768px) {
+
+  #home {
+    margin-top: 60px;
+  }
+
+  .hero {
+    padding: 10%;
+  }
+
+  .welcome {
+    font-size: 8vw;
+    /* Adjust the font size for smaller screens */
+  }
+
+  .shortDes {
+    font-size: 4vw;
+    /* Adjust the font size for smaller screens */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}

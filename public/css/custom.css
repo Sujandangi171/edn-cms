@@ -1,0 +1,62 @@
+.parent-icon,
+.icons i {
+    /* border: 1px solid blue; */
+    width: 1.4rem;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table td,
+th {
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .back-btn {
+        display: none;
+    }
+
+    #filter_date {
+        display: none;
+    }
+
+    #adjust {
+        display: none;
+
+    }
+
+    #export-button {
+        display: none;
+    }
+
+    #drawing-button {
+        display: none;
+    }
+}
+
+.btn {
+    /* border: 1px solid red;
+    margin-bottom: 2px; */
+}
+
+.customer_detail {
+    color: black;
+}
+
+.customer_detail:hover {
+    color: rgb(255, 30, 30);
+    transition: all 0.3s;
+}
+
+.ui-autocomplete {
+    position: relative;
+    cursor: default;
+    z-index: 9999 !important;
+}

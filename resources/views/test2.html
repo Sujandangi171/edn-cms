@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+  <title>CKEditor Example</title>
+</head>
+
+<body>
+  <textarea id="editor"></textarea>
+
+  <script>
+    // Wrap CKEditor initialization in DOMContentLoaded event listener
+    document.addEventListener('DOMContentLoaded', function() {
+      CKEDITOR.replace('editor');
+    });
+  </script>
+</body>
+
+</html>

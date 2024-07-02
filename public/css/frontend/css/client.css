@@ -1,0 +1,91 @@
+#clients {
+    background-color: #eaf2e7;
+    padding: 1px 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.client-text {
+    text-align: center;
+}
+
+.client-text p {
+    font-size: 36px;
+    font-weight: bold;
+    color: green;
+}
+
+.client__container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.client__description {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.client__container {
+    overflow: hidden;
+}
+
+.client-content,
+.client-content1 {
+    display: flex;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.client-content img,
+.client-content1 img {
+    width: calc(25% - 30px);
+    margin: -60px 15px;
+    height: 290px;
+}
+
+.client-content {
+    animation-name: clientFlow1;
+}
+
+.client-content1 {
+    animation-name: clientFlow2;
+}
+
+@keyframes clientFlow1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes clientFlow2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.client-details {
+    text-align: justify;
+    justify-content: right;
+}
+
+@media screen and (max-width: 768px) {
+    .client-content img,
+    .client-content1 img {
+        width: calc(50% - 20px);
+    }
+
+    .client-content {
+    }
+}

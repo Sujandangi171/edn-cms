@@ -1,0 +1,101 @@
+
+
+#gallery {
+  /* border: 2px solid mediumslateblue; */
+  background-color: #f5f5f5;
+  padding: 1px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-text {
+  text-align: center;
+}
+.gallery-head{
+  font-size:36px;
+  font-weight: bold;
+  color: green;
+}
+
+.gallery-text p {
+  /* font-size: 18px; */
+  
+}
+
+.gallery-columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  flex: 0 0 30%; /* Adjust the width of each column */
+  margin: 10px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.view-btn button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  
+}
+
+.view-btn button :hover{
+  background: green;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity  0.3s ease;
+}
+
+/* .gallery-item:hover .overlay {
+  opacity: 1;
+  background: grey;
+
+} */
+
+@media screen and (max-width: 768px) {
+  .gallery-columns {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap; /* Keep all items in a single row */
+  }
+
+  .gallery-item {
+    flex: 0 0 100%; /* Make each item take up full width on smaller screens */
+    margin: 10px 0; 
+  }
+  .gallery-item img{
+    padding-left: 20px;
+    border-radius:5px;
+  }
+
+  #gallery{
+    padding-top: 30px;
+  }
+
+  
+}

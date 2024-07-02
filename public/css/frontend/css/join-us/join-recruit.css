@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.head {
+  margin-top: 110px;
+  text-align: center;
+}
+
+.recruit__process {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.process,
+.process__a,
+.process__b {
+  display: flex;
+  width: 48%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.process__a {
+  align-items: center;
+}
+
+.process__b {
+  align-items: center;
+}
+
+.process__a,
+.process__b {
+  width: 100%;
+  padding: 10px;
+}
+
+.recruitment img {
+  width: 50%;
+  height: auto;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+
+  .process,
+  .process__a,
+  .process__b {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .process,
+  .process__a,
+  .process__b {
+    order: 1;
+  }
+
+  img {
+    order: 2;
+  }
+
+  .process:nth-child(odd),
+  .process__a:nth-child(odd),
+  .process__b:nth-child(odd) {
+    order: 3;
+  }
+
+  .process:nth-child(even),
+  .process__a:nth-child(even),
+  .process__b:nth-child(even) {
+    order: 4;
+  }
+}
+
+/* Sticky Footer */
+body {
+  flex: 1;
+  /* This is important to allow the footer to stick to the bottom */
+}
+

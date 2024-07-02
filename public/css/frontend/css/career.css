@@ -1,0 +1,188 @@
+#career {
+  display: flex;
+  position: relative;
+  background: url('/images/career.jpg') center/cover no-repeat;
+  padding: 1px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; 
+  /* height: 50vh; */
+}
+
+#careers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control darkness */
+}
+
+/* Your existing styles for career-text, career-head, career-sub-head, career-btn, etc. */
+
+
+.career-text {
+  max-width: 600px;
+  margin-left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.career-head {
+  font-size: 36px;
+  font-weight: bold;
+  color: green;
+  z-index: 2;
+}
+
+.career-sub-head {
+  font-size: 32px;
+}
+
+.career-btn {
+  flex: 0 0 35%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  position: relative; 
+  z-index: 2;
+}
+
+.career-btn::before,
+.career-btn::after,
+.career-btn .btn1::before,
+.career-btn .btn2::before {
+  /* content: 'asa'; */
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(231, 228, 228, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.career-btn::after {
+  content: 'or';
+  background-color: darkgray;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  margin-right: 10px;  
+
+}
+
+.career-btn::before {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(80, 79, 79);
+  left: 50%;
+}
+
+.career-btn .btn2::before {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  right: -25px; 
+}
+
+.career-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  /* background-color: green; */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.career-btn .btn1 {
+  border-top-left-radius: 25px;
+}
+
+.career-btn .btn2 {
+  border-bottom-right-radius: 25px;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #24B14D;
+  color: #fff; 
+  text-decoration: none;
+  transition: background-color 0.3s ease; 
+}
+
+.btn1:hover {
+  background-color: #087c29; 
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #aeafaf;
+  color: #fff; 
+  text-decoration: none;
+  transition: background-color 0.3s ease; 
+}
+
+.btn2:hover {
+  background-color: rgb(128, 126, 126) ;
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+  #career {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+  .career-text{
+    margin: 0 20px 0px;
+    text-align: justify;
+  }
+
+  .career-btn {
+    flex: 0 0 100%;
+    margin-top: 20px;
+  }
+}
+.career-sub-head p{
+  padding-left: 10px;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    background-color: #24B14D; /* Original blue color for btn1 */
+  }
+  50% {
+    background-color: #4F5354; /* Dark green color for btn1 during the blink */
+  }
+}
+
+@keyframes blink2 {
+  0%, 100% {
+    background-color: #4F5354; /* Original grey color for btn2 */
+  }
+  50% {
+    background-color: #24B14D; /* Dark grey color for btn2 during the blink */
+  }
+}
+
+.btn1 {
+  animation: blink 4s infinite; /* Adjust the duration as needed */
+}
+
+.btn2 {
+  animation: blink2 4s infinite; /* Adjust the duration as needed */
+  animation-delay: 4s; /* Delay the animation for the second button */
+}
